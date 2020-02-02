@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header style="background-color: green">
+      <h1>TODO LIST</h1>
+    </header>
+
+    <!-- a bunch of repetitions of this one thing, the "TODO" -->
+
+    <!-- HTML elements have some built-in CSS already -->
+    <button onclick="createNewTodo('placeholder text')">Create new todo</button>
+
+    <!-- this is a box -->
+    <!-- we're just gonna use it to store, style, move around, our todos -->
+    <div class="subtitle-wrapper">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, maxime?
+    </div>
+    <div class="all-todos-container">
+      <!-- here is a single TODO -->
+      <!-- div has CSS = display: block; width: 100%; height: fit-content -->
+      <!-- span has CSS = display: inline; width: fit-content; height: fit-content; doesn't even break the line -->
+      <div class="todo-container">
+        <span>TODO:</span>
+        <span>learn HTML</span>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+
+    <div class="stripe">
+      <div class="nav-items">
+        <div class="home-button">STRIPE</div>
+        <a href=""><div class="nav-item">item1</div></a>
+        <a href=""><div class="nav-item">item2</div></a>
+        <a href=""><div class="nav-item">item3</div></a>
+        <a href=""><div class="nav-item">item4</div></a>
+        <a href=""><div class="nav-item">item5</div></a>
+        <a href=""><div class="nav-item">item6</div></a>
+      </div>
+      <button class="click-me">CLICK ME</button>
+    </div>
+  </body>
+</html>

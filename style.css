@@ -1,0 +1,91 @@
+/* selector */
+/* { */
+/* property: value */
+/* } */
+
+/* wild-card selector: give me EVERYTHING */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+div {
+  /* non-specific: gives me all divs */
+  /* border: 1px solid red; */
+}
+
+/* give me the div with a class = "all-todos-container */
+div.all-todos-container {
+  border: 5px solid hsla(80, 50%, 50%, 1);
+}
+
+/* CSS : cascading style sheets */
+/* THE CASCADE!! */
+/* which styles "win"? */
+
+/* 1. the bottom-most ones */
+/* 2. the "more specific ones" */
+
+.stripe {
+  background-image: linear-gradient(
+    to right bottom,
+    #44409b,
+    #0059a9,
+    #006daa,
+    #007da3,
+    #008a99,
+    #218a90,
+    #338a87,
+    #42897f,
+    #367d75,
+    #2a726b,
+    #1d6761,
+    #0e5c57
+  );
+  height: 120vh; /* percent of the vertical height */
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.click-me {
+  /* floating action button */
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 64px;
+  height: 64px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 99999px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* give me the .nav-items div */
+/* inside that, give me all the a(nchor tags) */
+/* space means "inside" */
+.nav-items a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+}
+
+.home-button {
+  color: white;
+  width: 100%;
+}
+
+.nav-items {
+  display: flex; /* a flex-box */
+  justify-content: flex-end;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.nav-item {
+  margin-left: 1em;
+}
